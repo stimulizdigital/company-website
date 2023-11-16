@@ -419,17 +419,16 @@ const Navbar = () => {
               <Link href="/">
                 <a>
                   <img
-                    src="/images/black-logo.png"
+                    src="/images/stimuliz_transparent_logo.png"
                     alt="image"
+                    width={"50%"}
                   />
                 </a>
               </Link>
               <div className="sidebar-content">
                 <h3>About Us</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+              Stimuliz Digital is Regina's leading IT service provider, delivering innovative solutions across Saskatchewan. Our dedication to excellence ensures a full range of top-tier IT services to meet your every need.
                 </p>
 
                 <div className="sidebar-btn">
@@ -447,17 +446,16 @@ const Navbar = () => {
                 <ul className="info-list">
                   <li>
                     <i className="ri-phone-fill"></i>{" "}
-                    <a href="tel:9901234567">+990-123-4567</a>
+                    <a href="tel:18332159515">+1 833-215-9515 </a>
                   </li>
 
                   <li>
                     <i className="ri-mail-line"></i>{" "}
-                    <a href="mailto:stax@gmail.com">stax@gmail.com</a>
+                    <a href="mailto:admin@stimuliz.ca">admin@stimuliz.ca</a>
                   </li>
 
                   <li>
-                    <i className="ri-map-pin-line"></i> 413 North Las Vegas,
-                    NV 89032
+                    <i className="ri-map-pin-line"></i> 10 Research Dr, Regina, SK S4S 7J7
                   </li>
                 </ul>
               </div>
@@ -474,7 +472,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/company/stimuliz-digital" target="_blank" rel="noreferrer">
                     <i className="ri-linkedin-fill"></i>
                   </a>
                 </li>

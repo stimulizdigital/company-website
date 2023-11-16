@@ -22,18 +22,17 @@ const Footer = () => {
                 </Link>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consetetur sadi scing elitr sed
-                diam nonumy.
+              10 Research Dr, Regina, SK S4S 7J7
               </p>
 
               <ul className="widget-social">
                 <li>
                   <a
-                    href="https://www.facebook.com/EnvyTheme"
+                    href="https://www.linkedin.com/company/stimuliz-digital"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="ri-facebook-fill"></i>
+                    <i className="ri-linkedin-fill"></i>
                   </a>
                 </li>
                 <li>
@@ -54,7 +53,7 @@ const Footer = () => {
                     <i className="ri-youtube-fill"></i>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="https://vimeo.com/"
                     target="_blank"
@@ -62,8 +61,8 @@ const Footer = () => {
                   >
                     <i className="ri-vimeo-fill"></i>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
@@ -71,7 +70,7 @@ const Footer = () => {
                   >
                     <i className="ri-instagram-line"></i>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

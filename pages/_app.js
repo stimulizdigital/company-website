@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>
-          Stax - React IT Solutions & Services Template
+          Simuliz digital - Innovate...Transform...Grow & Repeat 
         </title>
         <meta 
           name="viewport" 

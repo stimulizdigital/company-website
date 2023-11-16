@@ -9,7 +9,7 @@ const IntroVideo = () => {
     <>
       <FsLightbox
         toggler={toggler}
-        sources={["https://www.youtube.com/watch?v=bk7McNUjWgw"]}
+        sources={["https://www.youtube.com/watch?v=5IuBNSDs_t4"]}
       />
 
       <div className="video-area">
@@ -22,7 +22,7 @@ const IntroVideo = () => {
             data-aos-once="true"
           >
             <div className="video-image">
-              <img src="/images/video/video.jpg" alt="image" />
+              <img src="/images/video/stim video.png" alt="image" />
             </div>
 
             <button

@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import NavbarTwo from '@/components/Layout/NavbarTwo'
+// import NavbarTwo from '@/components/Layout/NavbarTwo'
+import Navbar from "@/components/Layout/Navbar";
 import CTO from '@/components/Common/CTO'
 import Footer from '@/components/Layout/Footer'
 
 export default function Custom404() {
   return <>
-    <NavbarTwo />
+    <Navbar />
 
     <div
       className="page-banner-area mt-94"

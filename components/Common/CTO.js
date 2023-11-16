@@ -10,7 +10,7 @@ const CTO = () => {
               <div className="overview-card">
                 <h3>Call Us</h3>
                 <span>
-                  <a href="tel:9901234567">+990-123-4567</a>
+                  <a href="tel:+1 (639) 709-9000">+1 (639) 709-9000</a>
                 </span>
 
                 <div className="overview-shape">
@@ -23,7 +23,7 @@ const CTO = () => {
               <div className="overview-card">
                 <h3>Email Us</h3>
                 <span>
-                  <a href="mailto:hellostax@gmail.com">hellostax@gmail.com</a>
+                  <a href="mailto:admin@stimuliz.ca">admin@stimuliz.ca</a>
                 </span>
 
                 <div className="overview-shape">
@@ -36,7 +36,7 @@ const CTO = () => {
               <div className="overview-card">
                 <h3>Tech Support</h3>
                 <span>
-                  <a href="tel:15143125678">+1 (514) 312-5678</a>
+                  <a href="tel:16397099000">+1 (639) 709-9000 </a>
                 </span>
 
                 <div className="overview-shape">
@@ -48,7 +48,7 @@ const CTO = () => {
             <div className="col-lg-3 col-md-6">
               <div className="overview-card">
                 <h3>Visit Us</h3>
-                <span>413 North Las Vegas, NV 89032</span>
+                <span> 10 Research Dr, Regina, SK S4S 7J7  </span>
 
                 <div className="overview-shape">
                   <img src="/images/overview/overview-shape.png" alt="image" />
