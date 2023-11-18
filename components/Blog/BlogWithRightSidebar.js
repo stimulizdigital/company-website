@@ -12,7 +12,7 @@ const BlogWithRightSidebar = () => {
               <div className="col-lg-6 col-md-6">
                 <div className="single-blog-card">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-1.jpg" alt="image" />
 
@@ -42,7 +42,7 @@ const BlogWithRightSidebar = () => {
               <div className="col-lg-6 col-md-6">
                 <div className="single-blog-card">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-2.jpg" alt="image" />
 
@@ -70,7 +70,7 @@ const BlogWithRightSidebar = () => {
               <div className="col-lg-6 col-md-6">
                 <div className="single-blog-card">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-3.jpg" alt="image" />
 
@@ -98,7 +98,7 @@ const BlogWithRightSidebar = () => {
               <div className="col-lg-6 col-md-6">
                 <div className="single-blog-card">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-4.jpg" alt="image" />
 
@@ -128,7 +128,7 @@ const BlogWithRightSidebar = () => {
               <div className="col-lg-6 col-md-6">
                 <div className="single-blog-card">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-5.jpg" alt="image" />
 
@@ -158,7 +158,7 @@ const BlogWithRightSidebar = () => {
               <div className="col-lg-6 col-md-6">
                 <div className="single-blog-card">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-6.jpg" alt="image" />
 

@@ -16,7 +16,7 @@ const TopServices = () => {
             >
               <div className="single-features-card">
                 <div className="features-image">
-                  <Link href="/services/service-details">
+                  <Link href="/services/service-details" legacyBehavior>
 
                     <img
                       src="/images/features/features-1.png"
@@ -57,7 +57,7 @@ const TopServices = () => {
             >
               <div className="single-features-card" data-tilt>
                 <div className="features-image" data-tilt>
-                  <Link href="/services/service-details">
+                  <Link href="/services/service-details" legacyBehavior>
 
                     <img
                       src="/images/features/features-2.png"
@@ -98,7 +98,7 @@ const TopServices = () => {
             >
               <div className="single-features-card" data-tilt>
                 <div className="features-image" data-tilt>
-                  <Link href="/services/service-details">
+                  <Link href="/services/service-details" legacyBehavior>
 
                     <img
                       src="/images/features/features-3.png"

@@ -59,7 +59,7 @@ const ServiceSlider = () => {
               <SwiperSlide>
                 <div className="services-item">
                   <div className="services-image">
-                    <Link href="/services/service-details">
+                    <Link href="/services/service-details" legacyBehavior>
 
                       <img
                         src="/images/services/serives-1-software development.png"
@@ -87,7 +87,7 @@ const ServiceSlider = () => {
               <SwiperSlide>
                 <div className="services-item">
                   <div className="services-image">
-                    <Link href="/services/service-details">
+                    <Link href="/services/service-details" legacyBehavior>
 
                       <img
                         src="images/services/services-2-App-Development.png"
@@ -116,7 +116,7 @@ Elevate your business with our intuitive app development...
               <SwiperSlide>
                 <div className="services-item">
                   <div className="services-image">
-                    <Link href="/services/service-details">
+                    <Link href="/services/service-details" legacyBehavior>
 
                       <img
                         src="/images/services/services-3-webdevelopment.png"
@@ -144,7 +144,7 @@ Elevate your business with our intuitive app development...
               <SwiperSlide>
                 <div className="services-item">
                   <div className="services-image">
-                    <Link href="/services/service-details">
+                    <Link href="/services/service-details" legacyBehavior>
 
                       <img
                         src="/images/services/services-4-analytics.png"

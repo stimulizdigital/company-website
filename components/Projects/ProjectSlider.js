@@ -53,7 +53,7 @@ const ProjectSlider = () => {
                 data-aos-once="true"
               >
                 <div className="projects-image">
-                  <Link href="/projects/projects-details">
+                  <Link href="/projects/projects-details" legacyBehavior>
 
                     <img
                       src="/images/projects/projects-1.jpg"
@@ -84,7 +84,7 @@ const ProjectSlider = () => {
                 data-aos-once="true"
               >
                 <div className="projects-image">
-                  <Link href="/projects/projects-details">
+                  <Link href="/projects/projects-details" legacyBehavior>
 
                     <img
                       src="/images/projects/projects-2.jpg"
@@ -115,7 +115,7 @@ const ProjectSlider = () => {
                 data-aos-once="true"
               >
                 <div className="projects-image">
-                  <Link href="/projects/projects-details">
+                  <Link href="/projects/projects-details" legacyBehavior>
 
                     <img
                       src="/images/projects/projects-3.jpg"
@@ -146,7 +146,7 @@ const ProjectSlider = () => {
                 data-aos-once="true"
               >
                 <div className="projects-image">
-                  <Link href="/projects/projects-details">
+                  <Link href="/projects/projects-details" legacyBehavior>
 
                     <img
                       src="/images/projects/projects-4.jpg"
@@ -177,7 +177,7 @@ const ProjectSlider = () => {
                 data-aos-once="true"
               >
                 <div className="projects-image">
-                  <Link href="/projects/projects-details">
+                  <Link href="/projects/projects-details" legacyBehavior>
 
                     <img
                       src="/images/projects/projects-5.jpg"

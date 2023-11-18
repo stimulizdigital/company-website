@@ -20,7 +20,7 @@ const ServicesCard = () => {
           <div className="col-lg-3 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-1.jpg" alt="image" />
 
@@ -45,7 +45,7 @@ const ServicesCard = () => {
           <div className="col-lg-3 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-2.jpg" alt="image" />
 
@@ -70,7 +70,7 @@ const ServicesCard = () => {
           <div className="col-lg-3 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-3.jpg" alt="image" />
 
@@ -95,7 +95,7 @@ const ServicesCard = () => {
           <div className="col-lg-3 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-4.jpg" alt="image" />
 

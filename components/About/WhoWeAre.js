@@ -26,18 +26,16 @@ const WhoWeAre = () => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <span>WHO WE ARE</span>
-                <h3>
-                  We Are All In One IT Solution & Technology Company
-                </h3>
-                <p>
-                  We are leading technology solutions providing company all over
-                  the world doing over 40 years lorem ipsum dolor sit amet.
-                </p>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+               <span>WHO WE ARE</span>
+              <h3>
+              Your <b>One-Stop</b> IT & Tech Powerhouse
+              </h3>
+              <p>
+              Transcending boundaries with state-of-the-art technology solutions, we're the architects of tomorrow's digital landscape. Embark on a voyage to innovation with our expertly crafted tech prowess.
+              </p>
+              <p>
+              In the heart of Canada's innovation landscape, our Saskatchewan-based company leads the charge in fortifying the digital realm. Specializing in cybersecurity and blockchain technology, we are committed to building unbreakable digital infrastructures. Our mission is to empower businesses and individuals with robust security protocols and transformative blockchain solutions, ensuring trust and integrity are the bedrock of the digital age.
+              </p>
               </div>
             </div>
           </div>

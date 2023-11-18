@@ -9,7 +9,7 @@ const Skills = () => {
           <div className="col-lg-6 col-md-12">
             <div className="skill-content">
               <span>SKILLSET</span>
-              <h3>We Have A Set Of Skill With High Quality</h3>
+              <h3>We possess a suite of high-quality skills.</h3>
             </div>
 
             <div
@@ -21,14 +21,14 @@ const Skills = () => {
             >
               <h5 className="progress-title">
                 Software Development 
-                <span className="float-end">92%</span>
+                <span className="float-end">100%</span>
               </h5>
               <div className="progress border-3e019a">
                 <div
                   className="progress-bar bg-3e019a"
                   role="progressbar"
-                  style={{ width: '92%' }}
-                  aria-valuenow="92"
+                  style={{ width: '100%' }}
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -44,14 +44,14 @@ const Skills = () => {
             >
               <h5 className="progress-title">
                 App Development
-                <span className="float-end">80%</span>
+                <span className="float-end">100%</span>
               </h5>
               <div className="progress border-D5158F">
                 <div
                   className="progress-bar bg-D5158F"
                   role="progressbar"
-                  style={{ width: '80%' }}
-                  aria-valuenow="80"
+                  style={{ width: '100%' }}
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -67,14 +67,14 @@ const Skills = () => {
             >
               <h5 className="progress-title">
                 Artificial Intelligence
-                <span className="float-end">70%</span>
+                <span className="float-end">100%</span>
               </h5>
               <div className="progress border-feb302">
                 <div
                   className="progress-bar bg-feb302"
                   role="progressbar"
-                  style={{ width: '70%' }}
-                  aria-valuenow="70"
+                  style={{ width: '100%' }}
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -90,14 +90,14 @@ const Skills = () => {
             >
               <h5 className="progress-title">
                 Cyber Security
-                <span className="float-end">45%</span>
+                <span className="float-end">100%</span>
               </h5>
               <div className="progress border-A66BFF">
                 <div
                   className="progress-bar bg-A66BFF"
                   role="progressbar"
-                  style={{ width: '45%' }}
-                  aria-valuenow="45"
+                  style={{ width: '100%' }}
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>

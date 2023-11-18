@@ -21,7 +21,7 @@ const Sidebar = () => {
         <h3 className="widget-title">Recent Post</h3>
 
         <article className="item">
-          <Link href="/blog/single-blog" className="thumb">
+          <Link href="/blog/single-blog" className="thumb" legacyBehavior>
 
             <span className="fullimage bg1" role="img"></span>
 
@@ -37,7 +37,7 @@ const Sidebar = () => {
         </article>
 
         <article className="item">
-          <Link href="/blog/single-blog" className="thumb">
+          <Link href="/blog/single-blog" className="thumb" legacyBehavior>
 
             <span className="fullimage bg2" role="img"></span>
 
@@ -53,7 +53,7 @@ const Sidebar = () => {
         </article>
 
         <article className="item">
-          <Link href="/blog/single-blog" className="thumb">
+          <Link href="/blog/single-blog" className="thumb" legacyBehavior>
 
             <span className="fullimage bg3" role="img"></span>
 
@@ -76,7 +76,8 @@ const Sidebar = () => {
           <li>
             <Link
               href="/blog/categories"
-              className=" d-flex justify-content-between align-items-center">
+              className=" d-flex justify-content-between align-items-center"
+              legacyBehavior>
               Technology<span>(11)</span>
 
             </Link>
@@ -84,7 +85,8 @@ const Sidebar = () => {
           <li>
             <Link
               href="/blog/categories"
-              className=" d-flex justify-content-between align-items-center">
+              className=" d-flex justify-content-between align-items-center"
+              legacyBehavior>
               Information<span>(09)</span>
 
             </Link>
@@ -92,7 +94,8 @@ const Sidebar = () => {
           <li>
             <Link
               href="/blog/categories"
-              className=" d-flex justify-content-between align-items-center">
+              className=" d-flex justify-content-between align-items-center"
+              legacyBehavior>
               Business<span>(29)</span>
 
             </Link>
@@ -100,7 +103,8 @@ const Sidebar = () => {
           <li>
             <Link
               href="/blog/categories"
-              className=" d-flex justify-content-between align-items-center">
+              className=" d-flex justify-content-between align-items-center"
+              legacyBehavior>
               Development<span>(31)</span>
 
             </Link>
@@ -108,7 +112,8 @@ const Sidebar = () => {
           <li>
             <Link
               href="/blog/categories"
-              className=" d-flex justify-content-between align-items-center">
+              className=" d-flex justify-content-between align-items-center"
+              legacyBehavior>
               IT Services<span>(25)</span>
 
             </Link>

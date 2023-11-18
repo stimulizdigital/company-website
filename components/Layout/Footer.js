@@ -15,7 +15,7 @@ const Footer = () => {
               data-aos-once="true"
             >
               <div className="widget-logo">
-                <Link href="/">
+                <Link href="/" legacyBehavior>
 
                   <img src="/images/stimuliz white logo.png" alt="image" width="50%" />
 

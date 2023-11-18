@@ -55,7 +55,7 @@ const ProjectSliderTwo = () => {
               <SwiperSlide>
                 <div className="projects-item bg-F2F1F3">
                   <div className="projects-image">
-                    <Link href="/projects/projects-details">
+                    <Link href="/projects/projects-details" legacyBehavior>
 
                       <img
                         src="/images/projects/projects-1.jpg"
@@ -80,7 +80,7 @@ const ProjectSliderTwo = () => {
               <SwiperSlide>
                 <div className="projects-item bg-F2F1F3">
                   <div className="projects-image">
-                    <Link href="/projects/projects-details">
+                    <Link href="/projects/projects-details" legacyBehavior>
 
                       <img
                         src="/images/projects/projects-2.jpg"
@@ -105,7 +105,7 @@ const ProjectSliderTwo = () => {
               <SwiperSlide>
                 <div className="projects-item bg-F2F1F3">
                   <div className="projects-image">
-                    <Link href="/projects/projects-details">
+                    <Link href="/projects/projects-details" legacyBehavior>
 
                       <img
                         src="/images/projects/projects-3.jpg"
@@ -130,7 +130,7 @@ const ProjectSliderTwo = () => {
               <SwiperSlide>
                 <div className="projects-item bg-F2F1F3">
                   <div className="projects-image">
-                    <Link href="/projects/projects-details">
+                    <Link href="/projects/projects-details" legacyBehavior>
 
                       <img
                         src="/images/projects/projects-4.jpg"
@@ -155,7 +155,7 @@ const ProjectSliderTwo = () => {
               <SwiperSlide>
                 <div className="projects-item bg-F2F1F3">
                   <div className="projects-image">
-                    <Link href="/projects/projects-details">
+                    <Link href="/projects/projects-details" legacyBehavior>
 
                       <img
                         src="/images/projects/projects-5.jpg"

@@ -24,7 +24,7 @@ const BlogGrid = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-1.jpg" alt="image" />
 
@@ -65,7 +65,7 @@ const BlogGrid = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-2.jpg" alt="image" />
 
@@ -104,7 +104,7 @@ const BlogGrid = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-3.jpg" alt="image" />
 
@@ -143,7 +143,7 @@ const BlogGrid = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-4.jpg" alt="image" />
 
@@ -184,7 +184,7 @@ const BlogGrid = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-5.jpg" alt="image" />
 
@@ -225,7 +225,7 @@ const BlogGrid = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-6.jpg" alt="image" />
 

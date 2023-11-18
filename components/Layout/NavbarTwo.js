@@ -46,7 +46,8 @@ const NavbarTwo = () => {
               <nav className="navbar navbar-expand-md navbar-light">
                 <Link href="/">
                   <a className="navbar-brand">
-                    <img src="/images/logo.png" alt="Site logo" />
+                  <img src="/images/transparent_final_resized_stimuliz_logo-removebg-preview.png" alt="Site logo" className="logo" />
+                  <img  src="/images/Untitled design.png" alt="text next to logo" className="logo"/>
                   </a>
                 </Link>
 
@@ -68,12 +69,13 @@ const NavbarTwo = () => {
                 <div className={classOne} id="navbarSupportedContent">
                   <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                      <Link href="#">
+                      <Link href="/">
                         <a className="nav-link">
-                          Home <i className="ri-arrow-down-s-line"></i>
-                        </a>
+                          {/* Home <i className="ri-arrow-down-s-line"></i> */}
+                          Home
+                        </a> 
                       </Link>
-                      <ul className="dropdown-menu">
+                      {/* <ul className="dropdown-menu">
                         <li className="nav-item">
                           <Link href="/" activeClassName="active">
                             <a className="nav-link">Home Demo - 1</a>
@@ -91,14 +93,15 @@ const NavbarTwo = () => {
                             <a className="nav-link">Home Demo - 3</a>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
 
                     <li className="nav-item">
-                      <a href="#" className="nav-link">
-                        About <i className="ri-arrow-down-s-line"></i>
-                      </a>
-                      <ul className="dropdown-menu">
+                      <Link href="/about" className="nav-link">
+                        {/* About <i className="ri-arrow-down-s-line"></i> */}
+                        <a>About</a>
+                      </Link>
+                      {/* <ul className="dropdown-menu">
                         <li className="nav-item">
                           <Link href="/about" activeClassName="active">
                             <a className="nav-link">About Style - 1</a>
@@ -128,14 +131,15 @@ const NavbarTwo = () => {
                             <a className="nav-link">Testimonials</a>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
 
                     <li className="nav-item">
-                      <a href="#" className="nav-link">
-                        Services <i className="ri-arrow-down-s-line"></i>
-                      </a>
-                      <ul className="dropdown-menu">
+                      <Link href="/services/services" className="nav-link">
+                        {/* Services <i className="ri-arrow-down-s-line"></i> */}
+                        <a className="nav-link">Services</a>
+                      </Link>
+                      {/* <ul className="dropdown-menu">
                         <li className="nav-item">
                           <Link href="/services/services" activeClassName="active">
                             <a className="nav-link">Services Style - 1</a>
@@ -156,10 +160,10 @@ const NavbarTwo = () => {
                             <a className="nav-link">Services Details</a>
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
 
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <a href="#" className="nav-link">
                         Projects <i className="ri-arrow-down-s-line"></i>
                       </a>
@@ -178,9 +182,9 @@ const NavbarTwo = () => {
                           </Link>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
 
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link href="#" activeClassName="active">
                         <a className="nav-link">
                           Pages <i className="ri-arrow-down-s-line"></i>
@@ -272,13 +276,13 @@ const NavbarTwo = () => {
                           </Link>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
 
                     <li className="nav-item">
-                      <a href="#" className="nav-link">
-                        Blog <i className="ri-arrow-down-s-line"></i>
-                      </a>
-                      <ul className="dropdown-menu">
+                      <Link href="/blog" className="nav-link">
+                        <a>Blog</a>   
+                      </Link>
+                      {/* <ul className="dropdown-menu">
                         <li className="nav-item">
                           <Link href="/blog/blog" activeClassName="active">
                             <a className="nav-link">Blog Style - 1</a>
@@ -325,14 +329,14 @@ const NavbarTwo = () => {
                             </li>
                           </ul>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
-
+{/* 
                     <li className="nav-item">
                       <Link href="/pricing" activeClassName="active">
                         <a className="nav-link">Pricing</a>
                       </Link>
-                    </li>
+                    </li> */}
 
                     <li className="nav-item">
                       <Link href="/contact" activeClassName="active">

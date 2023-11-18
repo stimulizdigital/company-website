@@ -20,7 +20,7 @@ const AllServicesCardStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-1.jpg" alt="image" />
 
@@ -45,7 +45,7 @@ const AllServicesCardStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-2.jpg" alt="image" />
 
@@ -70,7 +70,7 @@ const AllServicesCardStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-3.jpg" alt="image" />
 
@@ -95,7 +95,7 @@ const AllServicesCardStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-4.jpg" alt="image" />
 
@@ -120,7 +120,7 @@ const AllServicesCardStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-5.jpg" alt="image" />
 
@@ -145,7 +145,7 @@ const AllServicesCardStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="services-item">
               <div className="services-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/services/services-6.jpg" alt="image" />
 

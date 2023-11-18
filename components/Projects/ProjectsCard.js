@@ -22,7 +22,7 @@ const ProjectsCard = () => {
               data-aos-once="true"
             >
               <div className="projects-image">
-                <Link href="/projects/projects-details">
+                <Link href="/projects/projects-details" legacyBehavior>
 
                   <img
                     src="/images/projects-two/projects-1.jpg"
@@ -54,7 +54,7 @@ const ProjectsCard = () => {
               data-aos-once="true"
             >
               <div className="projects-image">
-                <Link href="/projects/projects-details">
+                <Link href="/projects/projects-details" legacyBehavior>
 
                   <img
                     src="/images/projects-two/projects-2.jpg"
@@ -87,7 +87,7 @@ const ProjectsCard = () => {
               data-aos-once="true"
             >
               <div className="projects-image">
-                <Link href="/projects/projects-details">
+                <Link href="/projects/projects-details" legacyBehavior>
 
                   <img
                     src="/images/projects-two/projects-3.jpg"
@@ -120,7 +120,7 @@ const ProjectsCard = () => {
               data-aos-once="true"
             >
               <div className="projects-image">
-                <Link href="/projects/projects-details">
+                <Link href="/projects/projects-details" legacyBehavior>
 
                   <img
                     src="/images/projects-two/projects-4.jpg"
@@ -152,7 +152,7 @@ const ProjectsCard = () => {
               data-aos-once="true"
             >
               <div className="projects-image">
-                <Link href="/projects/projects-details">
+                <Link href="/projects/projects-details" legacyBehavior>
 
                   <img
                     src="/images/projects-two/projects-5.jpg"

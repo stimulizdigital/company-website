@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
               data-aos-once="true"
             >
               <div className="choose-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/choose/choose-1.png" alt="image" />
 
@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
               data-aos-once="true"
             >
               <div className="choose-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/choose/choose-2.png" alt="image" />
 
@@ -82,7 +82,7 @@ const WhyChooseUs = () => {
               data-aos-once="true"
             >
               <div className="choose-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/choose/choose-3.png" alt="image" />
 
@@ -110,7 +110,7 @@ const WhyChooseUs = () => {
               data-aos-once="true"
             >
               <div className="choose-image">
-                <Link href="/services/service-details">
+                <Link href="/services/service-details" legacyBehavior>
 
                   <img src="/images/choose/choose-4.png" alt="image" />
 

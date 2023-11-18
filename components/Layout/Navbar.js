@@ -135,17 +135,17 @@ const Navbar = () => {
                       </ul> */}
                     </li>
 
-                    {/* <li className="nav-item">
+                  {/* <li className="nav-item">
                       <a href="#" className="nav-link">
                         Services <i className="ri-arrow-down-s-line"></i>
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu"> */}
                         <li className="nav-item">
                           <Link href="/services/services" activeClassName="active">
-                            <a className="nav-link">Services Style - 1</a>
+                            <a className="nav-link">Services</a>
                           </Link>
                         </li>
-
+  {/* 
                         <li className="nav-item">
                           <Link href="/services/services-2" activeClassName="active">
                             <a className="nav-link">Services Style - 2</a>
@@ -278,17 +278,17 @@ const Navbar = () => {
                       </ul>
                     </li> */}
 
-                    {/* <li className="nav-item">
+                   {/* <li className="nav-item">
                       <a href="#" className="nav-link">
                         Blog <i className="ri-arrow-down-s-line"></i>
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu"> */}
                         <li className="nav-item">
-                          <Link href="/blog/blog" activeClassName="active">
-                            <a className="nav-link">Blog Style - 1</a>
+                          <Link href="/blog" activeClassName="active">
+                            <a className="nav-link">Blogs</a>
                           </Link>
                         </li>
-
+  {/*
                         <li className="nav-item">
                           <Link href="/blog/blog-2" activeClassName="active">
                             <a className="nav-link">Blog Style - 2</a>

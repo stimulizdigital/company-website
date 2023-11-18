@@ -44,7 +44,7 @@ const Article = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-1.jpg" alt="image" />
 
@@ -80,7 +80,7 @@ const Article = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-2.jpg" alt="image" />
 
@@ -113,7 +113,7 @@ const Article = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-3.jpg" alt="image" />
 
@@ -148,7 +148,7 @@ const Article = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="blog-image">
-                    <Link href="/blog/single-blog">
+                    <Link href="/blog/single-blog" legacyBehavior>
 
                       <img src="/images/blog/blog-2.jpg" alt="image" />
 

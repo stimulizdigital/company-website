@@ -16,7 +16,7 @@ const BlogGridStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="single-blog-card">
               <div className="blog-image">
-                <Link href="/blog/single-blog">
+                <Link href="/blog/single-blog" legacyBehavior>
 
                   <img src="/images/blog/blog-7.jpg" alt="image" />
 
@@ -44,7 +44,7 @@ const BlogGridStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="single-blog-card">
               <div className="blog-image">
-                <Link href="/blog/single-blog">
+                <Link href="/blog/single-blog" legacyBehavior>
 
                   <img src="/images/blog/blog-8.jpg" alt="image" />
 
@@ -72,7 +72,7 @@ const BlogGridStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="single-blog-card">
               <div className="blog-image">
-                <Link href="/blog/single-blog">
+                <Link href="/blog/single-blog" legacyBehavior>
 
                   <img src="/images/blog/blog-9.jpg" alt="image" />
 
@@ -100,7 +100,7 @@ const BlogGridStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="single-blog-card">
               <div className="blog-image">
-                <Link href="/blog/single-blog">
+                <Link href="/blog/single-blog" legacyBehavior>
 
                   <img src="/images/blog/blog-10.jpg" alt="image" />
 
@@ -128,7 +128,7 @@ const BlogGridStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="single-blog-card">
               <div className="blog-image">
-                <Link href="/blog/single-blog">
+                <Link href="/blog/single-blog" legacyBehavior>
 
                   <img src="/images/blog/blog-11.jpg" alt="image" />
 
@@ -158,7 +158,7 @@ const BlogGridStyle2 = () => {
           <div className="col-lg-4 col-md-6">
             <div className="single-blog-card">
               <div className="blog-image">
-                <Link href="/blog/single-blog">
+                <Link href="/blog/single-blog" legacyBehavior>
 
                   <img src="/images/blog/blog-12.jpg" alt="image" />
 
