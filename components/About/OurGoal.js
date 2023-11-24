@@ -1,6 +1,7 @@
+import { getStrapiMedia } from "@/utils/api-helpers";
 import React from "react";
 
-const OurGoal = () => {
+const OurGoal = ({data}) => {
   return (
     <>
       <div className="about-area pt-100 pb-75">
@@ -8,14 +9,14 @@ const OurGoal = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="about-wrap-image" data-tilt>
-                <img
-                  src="/images/about/about-5.jpg"
-                  alt="image"
-                  data-aos="fade-down"
-                  data-aos-delay="80"
-                  data-aos-duration="800"
-                  data-aos-once="true"
-                />
+              <img
+                    src={ getStrapiMedia(data.attributes.image.data.attributes.url)}
+                    alt={data.attributes.image.data.attributes.alternativeText}
+                    data-aos="fade-down"
+                    data-aos-delay="80"
+                    data-aos-duration="800"
+                    data-aos-once="true"
+                  />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -26,14 +27,11 @@ const OurGoal = () => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <span>OUR GOAL</span>
-                <h3>Your Trusted Partner For All IT Solutions</h3>
-                <p>
-                  We are leading technology solutions providing company all over
-                  the world doing over 40 years. Lorem ipsum dolor sit amet
-                  consetetur sadipscing elitre sed diam non umy eirmod tempor
-                  invidunt ut labore.
-                </p>
+                 <span>{data.attributes.subTitle}</span>
+                  <h3>{data.attributes.title}</h3>
+                  <p>
+                    {data.attributes.shortDec}
+                  </p>
               </div>
             </div>
           </div>
@@ -48,13 +46,10 @@ const OurGoal = () => {
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  <h3>Our Vision</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consetetur sadip scing elitr sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyamei erat sed diam voluptua at vero eos et accusam et
-                    justo duo.
-                  </p>
+                    <h3>{data.attributes.ourVisionTitle}</h3>
+                    <p>
+                      {data.attributes.ourVisionDec}
+                    </p>
                 </div>
               </div>
 
@@ -66,13 +61,10 @@ const OurGoal = () => {
                   data-aos-duration="700"
                   data-aos-once="true"
                 >
-                  <h3>Our Mission</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consetetur sadip scing elitr sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyamei erat sed diam voluptua at vero eos et accusam et
-                    justo duo.
-                  </p>
+                   <h3>{data.attributes.ourMissionTitle}</h3>
+                    <p>
+                      {data.attributes.ourMissionDec}
+                    </p>
                 </div>
               </div>
 
@@ -85,7 +77,10 @@ const OurGoal = () => {
                   data-aos-once="true"
                 >
                   <div className="card-image" data-tilt>
-                    <img src="/images/about/about-4.jpg" alt="image" />
+                  <img 
+                        src={getStrapiMedia(data.attributes.image2.data.attributes.url)}
+                        alt={data.attributes.image2.data.attributes.alternativeText}
+                      />
                   </div>
                 </div>
               </div>

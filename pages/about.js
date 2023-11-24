@@ -10,8 +10,11 @@ import PricingTable from "@/components/Pricing/PricingTable";
 import ContactForm from "@/components/Common/ContactForm";
 import Article from "@/components/Common/Article";
 import Footer from "@/components/Layout/Footer";
+import { fetchAPI } from "@/utils/fetchApI";
 
-export default function About() {
+
+
+export default function About({logo,footer,whoWeAre,ourGoals,whyChooseUs,skills,contact_form,articles}) {
   return <>
     <NavbarTwo />
 
@@ -37,24 +40,51 @@ export default function About() {
       </div>
     </div>
 
-    <WhoWeAre />
+    <WhoWeAre data={whoWeAre} />
 
     {/* <Partners /> */}
 
-    <OurGoal />
+    <OurGoal data={ourGoals}/>
 
     <div className="bg-with-F5F5F5-color">
-      <WhyChooseUs />
+      <WhyChooseUs  data={whyChooseUs}/>
     </div>
 
-    <Skills />
+    <Skills data={skills}/>
 
     {/* <PricingTable /> */}
 
-    <ContactForm />
+    <ContactForm  data={contact_form}/>
 
-    <Article />
+    <Article data={articles}/>
 
-    <Footer />
+    <Footer logo={logo} footer={footer} />
   </>;
+}
+
+
+export async function getStaticProps() {
+  const logo =  await fetchAPI("/site-logo?populate=*");
+  const footer_content  =  await fetchAPI("/footer?populate=*");
+  const who_we_are =  await fetchAPI("/about-who-we-are?populate=*");
+  const about_our_goals =  await fetchAPI("/about-our-goal?populate=*");
+  const why_choose_us =  await fetchAPI("/why-choose-us?populate=reason.image");
+  const skills  =  await fetchAPI("/skill?populate=*");
+  const contact_form  =  await fetchAPI("/contact-form?populate=*");
+  const articles =  await  fetchAPI("/blogs?populate=*");
+
+
+  return {
+    props:{
+      logo:logo.data,
+      footer:footer_content.data,
+      whoWeAre:who_we_are.data,
+      ourGoals:about_our_goals.data,
+      whyChooseUs:why_choose_us.data,
+      skills:skills.data,
+      contact_form:contact_form.data,
+      articles:articles.data
+    }
+  }
+
 }

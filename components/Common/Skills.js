@@ -1,15 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import { getStrapiMedia } from "@/utils/api-helpers";
 
-const Skills = () => {
+const Skills = ({data}) => {
   return <>
     <div className="skill-area ptb-100">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
             <div className="skill-content">
-              <span>SKILLSET</span>
-              <h3>We possess a suite of high-quality skills.</h3>
+              <span>{data.attributes.subTitle}</span>
+              <h3>{data.attributes.title}</h3>
             </div>
 
             <div
@@ -105,9 +106,8 @@ const Skills = () => {
             </div>
 
             <div className="skill-bar-btn" data-aos="fade-up" data-aos-delay="90" data-aos-duration="900" data-aos-once="true">
-              <Link href="/about" className="default-btn">
-                Explore More
-              </Link>
+              <Link href={data.attributes.btnLink} className="default-btn">
+              {data.attributes.btnText}              </Link>
             </div>
           </div>
 
@@ -119,7 +119,11 @@ const Skills = () => {
               data-aos-duration="800"
               data-aos-once="true"
             >
-              <img src="/images/skill/skill-1.png" alt="image" />
+             <img 
+                    src={ getStrapiMedia(data.attributes.image.data.attributes.url)}
+                    alt={data.attributes.image.data.attributes.alternativeText}
+                  />
+
 
               <div className="skill-shape-1">
                 <img src="/images/skill/skill-shape-1.png" alt="image" />

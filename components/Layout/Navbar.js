@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Link from "@/utils/ActiveLink";
+import { getStrapiMedia } from "@/utils/api-helpers";
 
-const Navbar = () => {
+
+const Navbar = ({ data }) => {
   const [menu, setMenu] = React.useState(true);
   const toggleNavbar = () => {
     setMenu(!menu);
@@ -16,6 +18,10 @@ const Navbar = () => {
       }
     });
   });
+  const contents = data?.attributes?.NavBarContents??{}
+  const stimulizLogo  = data?.attributes?.StimulizLogo?.data?.attributes?.url;
+  const StimulizTransparent = data?.attributes?.StimulizTransparent?.data?.attributes?.url;
+  const TextCloseTologo = data?.attributes?.TextCloseTologo?.data?.attributes?.url;
 
   const classOne = menu
     ? "collapse navbar-collapse mean-menu"
@@ -47,8 +53,8 @@ const Navbar = () => {
                 <Link href="/">
                   <a className="navbar-brand">
                     {/* <img src="/images/logo.png" alt="Site logo" /> */}
-                    <img src="/images/transparent_final_resized_stimuliz_logo-removebg-preview.png" alt="Site logo" className="logo" />
-                    <img  src="/images/Untitled design.png" alt="text next to logo" className="logo"/>
+                    <img src={getStrapiMedia(StimulizTransparent)} alt="Site logo" className="logo" />
+                    <img src={getStrapiMedia(TextCloseTologo)} alt="text next to logo" className="logo" />
                   </a>
                 </Link>
 
@@ -135,17 +141,17 @@ const Navbar = () => {
                       </ul> */}
                     </li>
 
-                  {/* <li className="nav-item">
+                    {/* <li className="nav-item">
                       <a href="#" className="nav-link">
                         Services <i className="ri-arrow-down-s-line"></i>
                       </a>
                       <ul className="dropdown-menu"> */}
-                        <li className="nav-item">
-                          <Link href="/services/services" activeClassName="active">
-                            <a className="nav-link">Services</a>
-                          </Link>
-                        </li>
-  {/* 
+                    <li className="nav-item">
+                      <Link href="/services/services" activeClassName="active">
+                        <a className="nav-link">Services</a>
+                      </Link>
+                    </li>
+                    {/* 
                         <li className="nav-item">
                           <Link href="/services/services-2" activeClassName="active">
                             <a className="nav-link">Services Style - 2</a>
@@ -278,17 +284,17 @@ const Navbar = () => {
                       </ul>
                     </li> */}
 
-                   {/* <li className="nav-item">
+                    {/* <li className="nav-item">
                       <a href="#" className="nav-link">
                         Blog <i className="ri-arrow-down-s-line"></i>
                       </a>
                       <ul className="dropdown-menu"> */}
-                        <li className="nav-item">
-                          <Link href="/blog" activeClassName="active">
-                            <a className="nav-link">Blogs</a>
-                          </Link>
-                        </li>
-  {/*
+                    <li className="nav-item">
+                      <Link href="/blog" activeClassName="active">
+                        <a className="nav-link">Blogs</a>
+                      </Link>
+                    </li>
+                    {/*
                         <li className="nav-item">
                           <Link href="/blog/blog-2" activeClassName="active">
                             <a className="nav-link">Blog Style - 2</a>
@@ -331,7 +337,7 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li> */}
-{/* 
+                    {/* 
                     <li className="nav-item">
                       <Link href="/pricing" activeClassName="active">
                         <a className="nav-link">Pricing</a>
@@ -372,9 +378,8 @@ const Navbar = () => {
 
       {/* Search Form */}
       <div
-        className={`search-overlay ${
-          isActiveSearchModal ? "" : "search-overlay-active"
-        }`}
+        className={`search-overlay ${isActiveSearchModal ? "" : "search-overlay-active"
+          }`}
       >
         <div className="d-table">
           <div className="d-table-cell">
@@ -419,7 +424,7 @@ const Navbar = () => {
               <Link href="/">
                 <a>
                   <img
-                    src="/images/stimuliz_transparent_logo.png"
+                    src={getStrapiMedia(stimulizLogo)}
                     alt="image"
                     width={"50%"}
                   />
@@ -428,13 +433,16 @@ const Navbar = () => {
               <div className="sidebar-content">
                 <h3>About Us</h3>
                 <p>
-              Stimuliz Digital is Regina's leading IT service provider, delivering innovative solutions across Saskatchewan. Our dedication to excellence ensures a full range of top-tier IT services to meet your every need.
+
+                  {
+                    contents?.Desc
+                  }
                 </p>
 
                 <div className="sidebar-btn">
                   <Link href="/contact">
                     <a className="default-btn">
-                      Let’s Talk
+                      {contents.SideBarButton}
                     </a>
                   </Link>
                 </div>
@@ -446,38 +454,44 @@ const Navbar = () => {
                 <ul className="info-list">
                   <li>
                     <i className="ri-phone-fill"></i>{" "}
-                    <a href="tel:18332159515">+1 833-215-9515 </a>
+                    <a href="tel:18332159515">{contents.StimulizPhoneNumber}</a>
                   </li>
 
                   <li>
                     <i className="ri-mail-line"></i>{" "}
-                    <a href="mailto:admin@stimuliz.ca">admin@stimuliz.ca</a>
+                    <a href={`mailto:${contents.StimulizEmailId}`}>
+
+                      {contents.StimulizEmailId}
+
+                    </a>
                   </li>
 
                   <li>
-                    <i className="ri-map-pin-line"></i> 10 Research Dr, Regina, SK S4S 7J7
+                    <i className="ri-map-pin-line"></i> {
+                      contents.Address
+                    }
                   </li>
                 </ul>
               </div>
 
               <ul className="sidebar-social-list">
                 <li>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                  <a href={contents.Facebook} target="_blank" rel="noreferrer">
                     <i className="ri-facebook-fill"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
+                  <a href={contents.Twitter} target="_blank" rel="noreferrer">
                     <i className="ri-twitter-fill"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/stimuliz-digital" target="_blank" rel="noreferrer">
+                  <a href={contents.LinkedIn} target="_blank" rel="noreferrer">
                     <i className="ri-linkedin-fill"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                  <a href={contents.Instagram} target="_blank" rel="noreferrer">
                     <i className="ri-instagram-fill"></i>
                   </a>
                 </li>
@@ -490,5 +504,7 @@ const Navbar = () => {
     </>
   );
 };
+
+
 
 export default Navbar;

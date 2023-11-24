@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { getStrapiMedia } from "@/utils/api-helpers";
+import { fetchAPI } from "@/utils/fetchApI";
 
-const Footer = () => {
-  return <>
+const Footer = ({logo,footer}) => {
+
+  const [logoState, setLogoState] = useState(logo);
+  const [footerContent,setFooterContent] = useState(footer);
+
+  useEffect(()=>{
+    const fetch = async ()=>{
+    if(!(logoState&&footerContent))
+    {
+      const {data:logoData} =  await fetchAPI("/site-logo?populate=*");
+      const {data:footer_content_data}  =  await fetchAPI("/footer?populate=*");
+      setLogoState(logoData);
+      setFooterContent(footer_content_data);
+    }
+
+  }
+
+  fetch()
+
+  },[])
+
+  return <>{ 
+    logoState &&
     <footer className="footer-area with-black-background pt-100">
       <div className="container">
         <div className="row justify-content-center">
@@ -17,12 +40,20 @@ const Footer = () => {
               <div className="widget-logo">
                 <Link href="/" legacyBehavior>
 
-                  <img src="/images/stimuliz white logo.png" alt="image" width="50%" />
-
+                <img
+                          src={ getStrapiMedia(logoState?.attributes?.whiteLogo?.data?.attributes?.url)}
+                          alt={
+                            logoState?.attributes?.whiteLogo?.data?.attributes
+                              ?.alternativeText
+                          }
+                          width={"50%"}
+                        />
                 </Link>
               </div>
               <p>
-              10 Research Dr, Regina, SK S4S 7J7
+              {
+               footer?.attributes?.address?.Line1
+              }
               </p>
 
               <ul className="widget-social">
@@ -122,9 +153,9 @@ const Footer = () => {
 
               <ul className="quick-links">
                 <li>
-                  {/* <Link href="/contact"> */}
-                    <a>Contact Us</a>
-                  {/* </Link> */}
+                  <Link href="/contact">
+                    Contact Us
+                  </Link>
                 </li>
                 <li>
                   {/* <Link href="/faq"> */}
@@ -201,7 +232,9 @@ const Footer = () => {
         <img src="/images/footer/footer-shape-3.png" alt="image" />
       </div>
     </footer>
-  </>;
+  }
+  </>
+  ;
 };
 
 export default Footer;

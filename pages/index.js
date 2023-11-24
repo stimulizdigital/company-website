@@ -11,21 +11,22 @@ import Testimonials from "@/components/Common/Testimonials";
 import PricingTable from "@/components/Pricing/PricingTable";
 import Article from "@/components/Common/Article";
 import Footer from "@/components/Layout/Footer";
+import { fetchAPI } from "@/utils/fetchApI";
 
-export default function Home() {
+export default function Home({navBar,heroSlider,whoWeAre,services,chooseUs,logo,footer}) {
   return (
     <>
-      <Navbar />
+      <Navbar data={navBar} />
 
-      <HeroSlider />
+      <HeroSlider data={heroSlider} />
 
       {/* <Partners /> */}
 
-      <WhoWeAre />
+      <WhoWeAre data={whoWeAre} />
 
-      <ServiceSlider />
+      <ServiceSlider data={services} />
 
-      <WhyChooseUs />
+      <WhyChooseUs data={chooseUs}/>
 
       <div className="mb-minus-100">
         <IntroVideo />
@@ -43,8 +44,30 @@ export default function Home() {
       <Article />
 </div> */}
       <div className="m-2 bor-radius-15">
-        <Footer className="rounded-4" />
+        <Footer className="rounded-4" logo={logo} footer={footer}/>
       </div>
     </>
   )
+}
+
+
+export async function getStaticProps() {
+  const res =  await fetchAPI("/nav-bar",{"populate":"*"});
+  const heroData  =  await fetchAPI("/hero-slider-home-1",{"populate":"sliderITem.image"});
+  const whoWeAre =  await fetchAPI("/who-we-are",{"populate":"*"});
+  const services  = await fetchAPI("/services?populate=*");
+  const chooseUs = await fetchAPI("/why-choose-us?populate=reason.image");
+  const logo =  await fetchAPI("/site-logo?populate=*");
+  const footer_content  =  await fetchAPI("/footer?populate=*");
+return {
+  props:{
+    navBar:res.data,
+    heroSlider:heroData.data,
+    whoWeAre:whoWeAre.data,
+    services:services.data,
+    chooseUs:chooseUs.data,
+    logo:logo.data,
+    footer:footer_content.data,
+  }
+}
 }
