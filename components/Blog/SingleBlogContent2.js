@@ -28,7 +28,7 @@ const SingleBlogContent2 = () => {
                     className="video-btn"
                     onClick={() => setToggler(!toggler)}
                   >
-                    <i className="ri-play-mini-fill"></i>
+                  <> <i className="ri-play-mini-fill"></i> </> 
                   </button>
                 </div>
 

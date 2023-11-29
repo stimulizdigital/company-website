@@ -22,7 +22,7 @@ export default function SingleBlog2() {
             <ul>
               <li>
                 <Link href="/">
-                  <a>Home</a>
+                 <> <a>Home</a> </>
                 </Link>
               </li>
               <li>Blog Details</li>

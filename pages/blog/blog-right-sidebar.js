@@ -8,7 +8,7 @@ import Footer from '@/components/Layout/Footer'
 export default function BlogRightSidebar() {
   return (
     <>
-      <NavbarTwo />
+   <NavbarTwo /> 
 
       <div
         className="page-banner-area mt-94"
@@ -26,7 +26,7 @@ export default function BlogRightSidebar() {
             <ul>
               <li>
                 <Link href="/">
-                  <a>Home</a>
+                 <> <a>Home</a> </>
                 </Link>
               </li>
               <li>Blog Right Sidebar</li>
@@ -35,11 +35,11 @@ export default function BlogRightSidebar() {
         </div>
       </div>
 
-      <BlogWithRightSidebar />
+    <BlogWithRightSidebar />
 
       <CTO />
 
-      <Footer />
+      <Footer /> 
     </>
   )
 }
