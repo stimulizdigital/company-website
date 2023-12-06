@@ -14,7 +14,7 @@ const BlogWithRightSidebar = () => {
                   <div className="blog-image">
                     <Link href="/blog/single-blog" legacyBehavior>
 
-                      <img src="/images/blog/blog-1.jpg" alt="image" />
+                    <>  <img src="/images/blog/blog-1.jpg" alt="image" /> </>
 
                     </Link>
 

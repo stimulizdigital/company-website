@@ -23,7 +23,7 @@ const Sidebar = () => {
         <article className="item">
           <Link href="/blog/single-blog" className="thumb" legacyBehavior>
 
-            <span className="fullimage bg1" role="img"></span>
+          <>  <span className="fullimage bg1" role="img"></span> </>
 
           </Link>
           <div className="info">
@@ -39,7 +39,7 @@ const Sidebar = () => {
         <article className="item">
           <Link href="/blog/single-blog" className="thumb" legacyBehavior>
 
-            <span className="fullimage bg2" role="img"></span>
+          <>  <span className="fullimage bg2" role="img"></span> </>
 
           </Link>
           <div className="info">
@@ -55,7 +55,7 @@ const Sidebar = () => {
         <article className="item">
           <Link href="/blog/single-blog" className="thumb" legacyBehavior>
 
-            <span className="fullimage bg3" role="img"></span>
+        <>    <span className="fullimage bg3" role="img"></span> </>
 
           </Link>
           <div className="info">
