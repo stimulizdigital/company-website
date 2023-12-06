@@ -45,10 +45,12 @@ const NavbarTwo = () => {
             <div className="container-fluid">
               <nav className="navbar navbar-expand-md navbar-light">
                 <Link href="/">
+                  <>
                   <a className="navbar-brand">
                   <img src="/images/transparent_final_resized_stimuliz_logo-removebg-preview.png" alt="Site logo" className="logo" />
                   <img  src="/images/Untitled design.png" alt="text next to logo" className="logo"/>
                   </a>
+                  </>
                 </Link>
 
                 <button
@@ -70,10 +72,12 @@ const NavbarTwo = () => {
                   <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
                       <Link href="/">
+                        <>
                         <a className="nav-link">
                           {/* Home <i className="ri-arrow-down-s-line"></i> */}
                           Home
                         </a> 
+                        </>
                       </Link>
                       {/* <ul className="dropdown-menu">
                         <li className="nav-item">
@@ -99,7 +103,7 @@ const NavbarTwo = () => {
                     <li className="nav-item">
                       <Link href="/about" className="nav-link">
                         {/* About <i className="ri-arrow-down-s-line"></i> */}
-                        <a>About</a>
+                      <> <a>About</a> </> 
                       </Link>
                       {/* <ul className="dropdown-menu">
                         <li className="nav-item">

@@ -1,5 +1,5 @@
 const baseApiUrl = process.env.NODE_ENV === "production" 
-? 'http://3.96.56.102:1337' 
+? process.env.NEXT_PUBLIC_STRAPI_API_URL 
 : 'http://localhost:1337';
 
 export default baseApiUrl;
