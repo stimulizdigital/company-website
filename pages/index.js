@@ -68,6 +68,7 @@ return {
     chooseUs:chooseUs.data,
     logo:logo.data,
     footer:footer_content.data,
-  }
+  },
+  revalidate: 10 
 }
 }

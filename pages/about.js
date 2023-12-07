@@ -84,7 +84,8 @@ export async function getStaticProps() {
       skills:skills.data,
       contact_form:contact_form.data,
       articles:articles.data
-    }
+    },
+    revalidate: 10 
   }
 
 }

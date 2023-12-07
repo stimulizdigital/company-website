@@ -78,6 +78,7 @@ export async function getStaticProps({ params }) {
       service,
       serviceSlider:serviceSlider.data
     },
+    revalidate: 10 
   };
 }
 

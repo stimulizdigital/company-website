@@ -64,6 +64,7 @@ export async function getStaticProps({ params }) {
         logo:logo.data,
         footer:footer_content.data
     },
+    revalidate: 10 
   };
 }
 

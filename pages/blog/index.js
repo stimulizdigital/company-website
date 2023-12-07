@@ -61,6 +61,7 @@ return {
     footer:footer_content.data,
     blogGrid:blogGrid.data,
     cto:cto.data
-  }
+  },
+  revalidate: 10 
 }
 }

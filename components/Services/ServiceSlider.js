@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper'
+import { getStrapiMedia } from '@/utils/api-helpers'
 
 
 const ServiceSlider = ({data}) => {
@@ -68,7 +69,7 @@ const ServiceSlider = ({data}) => {
                           <Link href={`/services/${service.attributes.slug}`}>
                               <img
                                 src={
-                                  service.attributes.image.data.attributes.url
+                                 getStrapiMedia(service.attributes.image.data.attributes.url)
                                 }
                                 alt={
                                   service.attributes.image.data.attributes

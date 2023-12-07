@@ -67,6 +67,7 @@ export async function getStaticProps({ params }) {
     props: {
       careers,
     },
+    revalidate: 10 
   };
 }
 

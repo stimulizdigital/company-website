@@ -54,6 +54,7 @@ const services  =  await fetchAPI("/services?populate=*");
 return {
   props:{
     services:services
-  }
+  },
+  revalidate: 10 
 }
 }

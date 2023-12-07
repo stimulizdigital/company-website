@@ -30,7 +30,7 @@ const Sidebar = () => {
             <span>09th July 2022</span>
             <h4 className="title usmall">
               <Link href="/blog/single-blog">
-                How Technology Dominate In The new World In 2022
+               <> How Technology Dominate In The new World In 2022 </>
               </Link>
             </h4>
           </div>
@@ -78,7 +78,7 @@ const Sidebar = () => {
               href="/blog/categories"
               className=" d-flex justify-content-between align-items-center"
               legacyBehavior>
-              Technology<span>(11)</span>
+            <>  Technology<span>(11)</span> </>
 
             </Link>
           </li>
@@ -87,7 +87,7 @@ const Sidebar = () => {
               href="/blog/categories"
               className=" d-flex justify-content-between align-items-center"
               legacyBehavior>
-              Information<span>(09)</span>
+            <>  Information<span>(09)</span> </>
 
             </Link>
           </li>
@@ -96,7 +96,7 @@ const Sidebar = () => {
               href="/blog/categories"
               className=" d-flex justify-content-between align-items-center"
               legacyBehavior>
-              Business<span>(29)</span>
+            <>  Business<span>(29)</span> </>
 
             </Link>
           </li>
@@ -105,7 +105,7 @@ const Sidebar = () => {
               href="/blog/categories"
               className=" d-flex justify-content-between align-items-center"
               legacyBehavior>
-              Development<span>(31)</span>
+            <>  Development<span>(31)</span> </>
 
             </Link>
           </li>
@@ -114,7 +114,7 @@ const Sidebar = () => {
               href="/blog/categories"
               className=" d-flex justify-content-between align-items-center"
               legacyBehavior>
-              IT Services<span>(25)</span>
+           <>   IT Services<span>(25)</span> </>
 
             </Link>
           </li>
