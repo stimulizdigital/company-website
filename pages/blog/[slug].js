@@ -41,7 +41,7 @@ const BlogDetails = ({ blogs: { data },footer,logo }) => {
 
 export async function getStaticPaths() {
   const blogs  =  await fetchAPI("/blogs");
-  // console.log(data);
+  console.log(blogs);
   const paths = blogs.data.map((blogs) => ({
     params: { slug: blogs.attributes.slug },
   }));
